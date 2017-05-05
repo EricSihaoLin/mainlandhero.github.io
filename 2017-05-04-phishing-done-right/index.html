@@ -6,12 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Just a Thought</title>
+  <title>Phishing Done Right - Just a Thought</title>
 
   <meta name="author" content="Eric Sihao Lin" />
 
-  
-  <meta name="description" content="I think about lots of random things, and here are some things I feel so passionate about that I have to write about them.">
   
 
   <link rel="alternate" type="application/rss+xml" title="Just a Thought - Beginning of the End" href="/feed.xml" />
@@ -54,23 +52,23 @@
   
 
   
-  <meta property="og:title" content="Just a Thought" />
+  <meta property="og:title" content="Phishing Done Right" />
   
 
    
-  <meta property="og:description" content="I think about lots of random things, and here are some things I feel so passionate about that I have to write about them.">
+  <meta property="og:description" content="Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="https://mainlandhero.github.io/" />
-  <link rel="canonical" href="https://mainlandhero.github.io/" />
+  <meta property="og:url" content="https://mainlandhero.github.io/2017-05-04-phishing-done-right/" />
+  <link rel="canonical" href="https://mainlandhero.github.io/2017-05-04-phishing-done-right/" />
   
 
   
-  <meta property="og:image" content="https://mainlandhero.github.io/img/avatar-icon.png" />
+  <meta property="og:image" content="https://mainlandhero.github.io/uploads/gdocphish1.png" />
   
   
 
@@ -80,15 +78,15 @@
   <meta name="twitter:creator" content="@ericslin" />
 
   
-  <meta name="twitter:title" content="Just a Thought" />
+  <meta name="twitter:title" content="Phishing Done Right" />
   
 
   
-  <meta name="twitter:description" content="I think about lots of random things, and here are some things I feel so passionate about that I have to write about them.">
+  <meta name="twitter:description" content="Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...">
   
 
   
-  <meta name="twitter:image" content="https://mainlandhero.github.io/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://mainlandhero.github.io/uploads/gdocphish1.png" />
   
 
 </head>
@@ -189,15 +187,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-heading">
-          <h1>Just a Thought</h1>
-		  
-		    
-            <hr class="small">
-            <span class="page-subheading">I think about lots of random things, and here are some things I feel so passionate about that I have to write about them.</span>
-			
+        <div class="post-heading">
+          <h1>Phishing Done Right</h1>
 		  
 		  
+		  
+		  <span class="post-meta">Posted on May 4, 2017</span>
 		  
         </div>
       </div>
@@ -209,190 +204,125 @@
 
 
 
-<div class="container" role="main">
+<div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div class="posts-list">
-  
-  <article class="post-preview">
-    <a href="/2017-05-05-american-health-care-act/">
-	  <h2 class="post-title">American Health Care Act?</h2>
 
-	  
+      <article role="main" class="blog-post">
+        <p>Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!</p>
+
+<h2 id="the-new-york-university-memo">The New York University Memo</h2>
+<p><img src="/uploads/gdocmemo.PNG" alt="gdocmemo.PNG" /></p>
+
+<h2 id="what-is-phishing">What is phishing?</h2>
+<p>For those that are unfamiliar with the term “phishing,” it is basically the act of impersonating a reputable company by sending something that looks legitimate but turns out revealing sensitive information about the person who wrongfully believed it to be originating from said reputable company. The sensitive information may contain your contacts, credit card information, your address, or even your passwords. Each phishing attack targets different information, so you have to judge it on a case by case basis to see what might be compromised if you did fall for the phishing attack.</p>
+
+<p>Let’s dive into the technicalities of the actual phishing scam, not that I was successfully phished or anything (my friends would know since had I authorized, everyone on my contact list would’ve gotten the phishing email too).</p>
+
+<h2 id="things-that-this-phishing-attack-did-right">Things that this phishing attack did right:</h2>
+<ol>
+  <li>It uses the existing and legitimate Google login system</li>
+  <li>It uses an app name that seems legitimate (Google Docs)</li>
+  <li>Gains access to your account by OAuth and propagates itself through contacts</li>
+  <li>Since it is an OAuth application, you have already granted it permission, so it ignores all MFA securities</li>
+  <li>Hard to detect for normal users</li>
+</ol>
+
+<h2 id="how-could-i-have-detected-the-phish">How could I have detected the phish?</h2>
+<p>Well, you had to be very diligent about everything you receive. Google Docs is a Google Suite App, and it should never ever have to ask you for permission to use it. Even if Google made it so that it did, the other way to detect the phishing trick was to click on the actual application name to see the website link.</p>
+
+<h2 id="did-you-get-the-email">Did you get the email?</h2>
+<p>I actually did not get the email, I guess Google shut it down pretty quickly. I only learned about this email because a co-worker of mine received it and sent it directly to his Trash (good on him)!</p>
+
+<h2 id="will-this-happen-again">Will this happen again?</h2>
+<p>I mean, Google only shut down the phishing user’s account, but did not actually block off the method of doing said phishing method (as of this post). One way for Google to counteract to this is to not allow similar names for OAuth apps that are also their native apps.</p>
+
+<p>Or they could just slap a giant warning on the OAuth page telling users to check the actual website of the application they are giving permission to. Perhaps maybe even put a human on top of approving OAuth application submissions. (But this costs time and money)</p>
+
+<p>So really there is no “great” way to solve this problem, only workarounds or really gimmicky hacks. Even the page that Google took you to when they shut down the OAuth on the account was a temporary page. Everything was done in a rush, but at least people won’t get phished anymore from that account.</p>
+
+<p>Yay?</p>
+
+      </article>
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tag/tech">tech</a>
+          
+          
+        </div>
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+  <span>Click to share:</span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=Phishing+Done+Right+https://mainlandhero.github.io/2017-05-04-phishing-done-right/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
     </a>
-
-    <p class="post-meta">
-      Posted on May 5, 2017
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-image">
-        <a href="/2017-05-05-american-health-care-act/">
-          <img src="/uploads/congress.jpg">
-        </a>
-      </div>
-      
-      <div class="post-entry">
-        Congress just passed a bill on Health Care? Supposedly lowers premiums and give consumers more choice? Let’s take a closer look at the bill that Republicans have been wanting to pass for 7 years, the American Health Care Act. (or try to, objectively…)
-
-
-        
-        
-          <a href="/2017-05-05-american-health-care-act/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tag/politics">politics</a>
-      
-      
-    </div>
-    
-
-   </article>
   
-  <article class="post-preview">
-    <a href="/2017-05-04-automate-all-the-things/">
-	  <h2 class="post-title">Automate All the Things!</h2>
 
-	  
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://mainlandhero.github.io/2017-05-04-phishing-done-right/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
     </a>
-
-    <p class="post-meta">
-      Posted on May 4, 2017
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-image">
-        <a href="/2017-05-04-automate-all-the-things/">
-          <img src="/uploads/google-apps-script.jpg">
-        </a>
-      </div>
-      
-      <div class="post-entry">
-        Recently, a co-worker of mine exposed me to this wonderful thing called Google Apps Scripts, another one of Google’s languages (this one perhaps more useful). It is built on Javascript, and it can access all Google Suite Apps as global natives.
-
-
-        
-        
-          <a href="/2017-05-04-automate-all-the-things/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tag/tech">tech</a>
-      
-      
-    </div>
-    
-
-   </article>
   
-  <article class="post-preview">
-    <a href="/2017-05-04-phishing-done-right/">
-	  <h2 class="post-title">Phishing Done Right</h2>
 
-	  
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mainlandhero.github.io/2017-05-04-phishing-done-right/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
     </a>
-
-    <p class="post-meta">
-      Posted on May 4, 2017
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-image">
-        <a href="/2017-05-04-phishing-done-right/">
-          <img src="/uploads/gdocphish1.png">
-        </a>
-      </div>
-      
-      <div class="post-entry">
-        Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...
-        
-        
-          <a href="/2017-05-04-phishing-done-right/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tag/tech">tech</a>
-      
-      
-    </div>
-    
-
-   </article>
   
-  <article class="post-preview">
-    <a href="/2017-05-01-first-post/">
-	  <h2 class="post-title">Welcome to the Thought Bubble!</h2>
 
-	  
-    </a>
+</section>
 
-    <p class="post-meta">
-      Posted on May 1, 2017
-    </p>
 
-    <div class="post-entry-container">
+
       
-      <div class="post-image">
-        <a href="/2017-05-01-first-post/">
-          <img src="/img/avatar-icon.png">
-        </a>
-      </div>
-      
-      <div class="post-entry">
-        Every idea has to start somewhere, and mine will start here…
 
-
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="/2017-05-01-first-post/" data-toggle="tooltip" data-placement="top" title="Welcome to the Thought Bubble!">&larr; Previous Post</a>
+        </li>
         
         
-          <a href="/2017-05-01-first-post/" class="post-read-more">[Read&nbsp;More]</a>
+        <li class="next">
+          <a href="/2017-05-04-automate-all-the-things/" data-toggle="tooltip" data-placement="top" title="Automate All the Things!">Next Post &rarr;</a>
+        </li>
         
-      </div>
-    </div>
+      </ul>
 
-    
-    <div class="blog-tags">
-      Tags:
       
+        <div class="disqus-comments">
+          
+
+        </div>
       
-      <a href="/tag/milestone">milestone</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
-</div>
-
-
-
-	    
     </div>
   </div>
 </div>
-
 
     <footer>
   <div class="container beautiful-jekyll-footer">
