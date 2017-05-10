@@ -3,8 +3,8 @@
   <channel>
     <title>Just a Thought</title>
     <description>Beginning of the End</description>
-    <link>https://mainlandhero.github.io</link>
-    <atom:link href="https://mainlandhero.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://ericslin.com</link>
+    <atom:link href="http://ericslin.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>American Health Care Act?</title>
@@ -13,8 +13,8 @@
           Congress just passed a bill on Health Care? Supposedly lowers premiums and give consumers more choice? Let’s take a closer look at the bill that Republicans have been wanting to pass for 7 years, the American Health Care Act. (or try to, objectively…) The American Health Care Act What is...
         </description>
         <pubDate>Fri, 05 May 2017 00:43:00 -0400</pubDate>
-        <link>https://mainlandhero.github.io/2017-05-05-american-health-care-act/</link>
-        <guid isPermaLink="true">https://mainlandhero.github.io/2017-05-05-american-health-care-act/</guid>
+        <link>http://ericslin.com/2017-05-05-american-health-care-act/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-05-american-health-care-act/</guid>
       </item>
     
       <item>
@@ -24,8 +24,8 @@
           Recently, a co-worker of mine exposed me to this wonderful thing called Google Apps Scripts, another one of Google’s languages (this one perhaps more useful). It is built on Javascript, and it can access all Google Suite Apps as global natives. What is this “Google Apps Scripts” for? Well honestly,...
         </description>
         <pubDate>Thu, 04 May 2017 11:16:00 -0400</pubDate>
-        <link>https://mainlandhero.github.io/2017-05-04-automate-all-the-things/</link>
-        <guid isPermaLink="true">https://mainlandhero.github.io/2017-05-04-automate-all-the-things/</guid>
+        <link>http://ericslin.com/2017-05-04-automate-all-the-things/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-04-automate-all-the-things/</guid>
       </item>
     
       <item>
@@ -35,8 +35,8 @@
           Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...
         </description>
         <pubDate>Thu, 04 May 2017 01:05:00 -0400</pubDate>
-        <link>https://mainlandhero.github.io/2017-05-04-phishing-done-right/</link>
-        <guid isPermaLink="true">https://mainlandhero.github.io/2017-05-04-phishing-done-right/</guid>
+        <link>http://ericslin.com/2017-05-04-phishing-done-right/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-04-phishing-done-right/</guid>
       </item>
     
       <item>
@@ -46,8 +46,8 @@
           Every idea has to start somewhere, and mine will start here… What is this? This is where I share my ideas, current concerns about the world, or my general wonderment. It may contain views and perspectives that are different from the popular opinion (maybe your opinion too). Take everything with...
         </description>
         <pubDate>Mon, 01 May 2017 01:00:00 -0400</pubDate>
-        <link>https://mainlandhero.github.io/2017-05-01-first-post/</link>
-        <guid isPermaLink="true">https://mainlandhero.github.io/2017-05-01-first-post/</guid>
+        <link>http://ericslin.com/2017-05-01-first-post/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-01-first-post/</guid>
       </item>
     
   </channel>

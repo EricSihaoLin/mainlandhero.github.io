@@ -1,1 +1,1 @@
-Sitemap: https://mainlandhero.github.io/sitemap.xml
+Sitemap: http://ericslin.com/sitemap.xml
