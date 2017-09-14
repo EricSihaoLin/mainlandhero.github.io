@@ -1,25 +1,87 @@
----
-layout: 
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:20 %}
+    <title>Just a Thought</title>
+    <description>Beginning of the End</description>
+    <link>http://ericslin.com</link>
+    <atom:link href="http://ericslin.com/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
+        <title>The Dangerous Reality of the Industry</title>
         <description>
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+          
+          You have probably heard of Equifax before if you’re checking your credit score, since it is one of the three giant Credit Bureau that gives you a score based on how responsible you are with your credit lines. Well, this morning they finally announced that they were hacked during mid-May/June...
         </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <pubDate>Fri, 08 Sep 2017 12:14:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-09-08-the-dangerous-reality-of-the-industry/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-09-08-the-dangerous-reality-of-the-industry/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Is Artificial Intelligence Dangerous?</title>
+        <description>
+          
+          Artificial Intelligence, or AI for short, seems like the latest trend in the technology industry. Everyone wants to hop on board and start researching and working on this new hip trend. However, the industry is divided on its regulations. Artificial Intelligence Overview Regulation Stifles Progress - Mark Zuckerberg The CEO...
+        </description>
+        <pubDate>Wed, 02 Aug 2017 17:54:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-08-02-is-artificial-intelligence-dangerous/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-08-02-is-artificial-intelligence-dangerous/</guid>
+      </item>
+    
+      <item>
+        <title>WannaCry Ransomware</title>
+        <description>
+          
+          Recent ransomware dubbed “WannaCry” has brought many computers down to its knees. Let’s take a look at the essentials and how to protect yourself from a worm like this in the future. WannaCry Ransomware What is a Ransomware A ransomware is a program that is designed to restrict or cut...
+        </description>
+        <pubDate>Tue, 30 May 2017 09:27:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-05-30-wannacry-ransomware/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-30-wannacry-ransomware/</guid>
+      </item>
+    
+      <item>
+        <title>American Health Care Act?</title>
+        <description>
+          
+          Congress just passed a bill on Health Care? Supposedly lowers premiums and give consumers more choice? Let’s take a closer look at the bill that Republicans have been wanting to pass for 7 years, the American Health Care Act. (or try to, objectively…) The American Health Care Act What is...
+        </description>
+        <pubDate>Fri, 05 May 2017 00:43:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-05-05-american-health-care-act/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-05-american-health-care-act/</guid>
+      </item>
+    
+      <item>
+        <title>Automate All the Things!</title>
+        <description>
+          
+          Recently, a co-worker of mine exposed me to this wonderful thing called Google Apps Scripts, another one of Google’s languages (this one perhaps more useful). It is built on Javascript, and it can access all Google Suite Apps as global natives. What is this “Google Apps Scripts” for? Well honestly,...
+        </description>
+        <pubDate>Thu, 04 May 2017 11:16:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-05-04-automate-all-the-things/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-04-automate-all-the-things/</guid>
+      </item>
+    
+      <item>
+        <title>Phishing Done Right</title>
+        <description>
+          
+          Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...
+        </description>
+        <pubDate>Thu, 04 May 2017 01:05:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-05-04-phishing-done-right/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-04-phishing-done-right/</guid>
+      </item>
+    
+      <item>
+        <title>Welcome to the Thought Bubble!</title>
+        <description>
+          
+          Every idea has to start somewhere, and mine will start here… What is this? This is where I share my ideas, current concerns about the world, or my general wonderment. It may contain views and perspectives that are different from the popular opinion (maybe your opinion too). Take everything with...
+        </description>
+        <pubDate>Mon, 01 May 2017 01:00:00 -0400</pubDate>
+        <link>http://ericslin.com/2017-05-01-first-post/</link>
+        <guid isPermaLink="true">http://ericslin.com/2017-05-01-first-post/</guid>
+      </item>
+    
   </channel>
 </rss>

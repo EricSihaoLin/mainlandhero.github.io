@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Phishing Done Right - Just a Thought</title>
+
+  <meta name="author" content="Eric Sihao Lin" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Just a Thought - Beginning of the End" href="/feed.xml" />
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Phishing Done Right" />
+  
+
+   
+  <meta property="og:description" content="Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://ericslin.com/2017-05-04-phishing-done-right/" />
+  <link rel="canonical" href="http://ericslin.com/2017-05-04-phishing-done-right/" />
+  
+
+  
+  <meta property="og:image" content="http://ericslin.com/uploads/gdocphish1.png" />
+  
+  
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ericslin" />
+  <meta name="twitter:creator" content="@ericslin" />
+
+  
+  <meta name="twitter:title" content="Phishing Done Right" />
+  
+
+  
+  <meta name="twitter:description" content="Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!...">
+  
+
+  
+  <meta name="twitter:image" content="http://ericslin.com/uploads/gdocphish1.png" />
+  
+
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" href="http://ericslin.com">Just a Thought</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+            
+
+
+
+
+
+<a href="http://ericslin.com/uploads/Lin.Eric_Resume.pdf">Resume</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Resources</a>
+            <div class="navlinks-children">
+              
+                
+                  
+            
+
+
+
+
+
+<a href="https://pages.github.com/">GitHub Pages</a>
+
+                
+                  
+            
+
+
+
+
+
+<a href="https://developers.google.com/apps-script/">Google Apps Scripts</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+      </ul>
+    </div>
+	
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://ericslin.com ">
+	      <img class="avatar-img" src="/uploads/EricAvatar.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Phishing Done Right</h1>
+		  
+		  
+		  
+		  <span class="post-meta">Posted on May 4, 2017</span>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      <article role="main" class="blog-post">
+        <p>Oh boy, today I got a notification from New York University’s Chief Information Officer about a phishing scam happening to many universities nation wide, I was both concerned and excited. In order for such a phishing campaign to be successful and got past most difficulties, it must be well designed!</p>
+
+<h2 id="the-new-york-university-memo">The New York University Memo</h2>
+<p><img src="/uploads/gdocmemo.PNG" alt="gdocmemo.PNG" /></p>
+
+<h2 id="what-is-phishing">What is phishing?</h2>
+<p>For those that are unfamiliar with the term “phishing,” it is basically the act of impersonating a reputable company by sending something that looks legitimate but turns out revealing sensitive information about the person who wrongfully believed it to be originating from said reputable company. The sensitive information may contain your contacts, credit card information, your address, or even your passwords. Each phishing attack targets different information, so you have to judge it on a case by case basis to see what might be compromised if you did fall for the phishing attack.</p>
+
+<p>Let’s dive into the technicalities of the actual phishing scam, not that I was successfully phished or anything (my friends would know since had I authorized, everyone on my contact list would’ve gotten the phishing email too).</p>
+
+<h2 id="things-that-this-phishing-attack-did-right">Things that this phishing attack did right:</h2>
+<ol>
+  <li>It uses the existing and legitimate Google login system</li>
+  <li>It uses an app name that seems legitimate (Google Docs)</li>
+  <li>Gains access to your account by OAuth and propagates itself through contacts</li>
+  <li>Since it is an OAuth application, you have already granted it permission, so it ignores all MFA securities</li>
+  <li>Hard to detect for normal users</li>
+</ol>
+
+<h2 id="how-could-i-have-detected-the-phish">How could I have detected the phish?</h2>
+<p>Well, you had to be very diligent about everything you receive. Google Docs is a Google Suite App, and it should never ever have to ask you for permission to use it. Even if Google made it so that it did, the other way to detect the phishing trick was to click on the actual application name to see the website link.</p>
+
+<h2 id="did-you-get-the-email">Did you get the email?</h2>
+<p>I actually did not get the email, I guess Google shut it down pretty quickly. I only learned about this email because a co-worker of mine received it and sent it directly to his Trash (good on him)!</p>
+
+<h2 id="will-this-happen-again">Will this happen again?</h2>
+<p>I mean, Google only shut down the phishing user’s account, but did not actually block off the method of doing said phishing method (as of this post). One way for Google to counteract to this is to not allow similar names for OAuth apps that are also their native apps.</p>
+
+<p>Or they could just slap a giant warning on the OAuth page telling users to check the actual website of the application they are giving permission to. Perhaps maybe even put a human on top of approving OAuth application submissions. (But this costs time and money)</p>
+
+<p>So really there is no “great” way to solve this problem, only workarounds or really gimmicky hacks. Even the page that Google took you to when they shut down the OAuth on the account was a temporary page. Everything was done in a rush, but at least people won’t get phished anymore from that account.</p>
+
+<p>Yay?</p>
+
+      </article>
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tag/tech">tech</a>
+          
+          
+        </div>
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+  <span>Click to share:</span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=Phishing+Done+Right+http://ericslin.com/2017-05-04-phishing-done-right/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://ericslin.com/2017-05-04-phishing-done-right/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://ericslin.com/2017-05-04-phishing-done-right/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="/2017-05-01-first-post/" data-toggle="tooltip" data-placement="top" title="Welcome to the Thought Bubble!">&larr; Previous Post</a>
+        </li>
+        
+        
+        <li class="next">
+          <a href="/2017-05-04-automate-all-the-things/" data-toggle="tooltip" data-placement="top" title="Automate All the Things!">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          <li>
+            <a href="https://www.facebook.com/ericsihaolin" title="Facebook">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://github.com/mainlandHero" title="GitHub">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://twitter.com/ericslin" title="Twitter">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          
+	  
+      
+		  
+          <li>
+            <a href="mailto:eric.lin@nyu.edu" title="Email me">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Email me</span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://linkedin.com/in/ericsihaolin" title="LinkedIn">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          
+		  
+		  
+      
+      
+      
+      
+      
+		  
+        </ul>
+        <p class="copyright text-muted">
+		  Eric Sihao Lin
+		  &nbsp;&bull;&nbsp;
+		  2017
+
+		  
+		  &nbsp;&bull;&nbsp;
+		  <a href="http://ericslin.com">EricSLin.com</a>
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>
